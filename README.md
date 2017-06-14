@@ -22,10 +22,25 @@ However there were issues importing the 10,000,000 run data to Excel. When I cop
 
 I set up the Excel Spreadsheet to calculate the Average Time, Standard Deviation, Lowest Time, Highest Time, Total Time, and Time Difference between the two runs.
 
+My steps for each run were as follow:
+
+1. Run the test and wait for it to finish.
+2. Once finished, copy and paste all the from the text files to an Excel designated for this test run.
+3. Eliminate any extreme outliers, otherwise, leave the data as is.
+4. Start over at 1. but modify int runLimit.
+
 ## Results
 
 ### 500 Run Trial
 
+| Data Type (ns) | Forward Runs | Backward Runs |
+|---|---|---|
+| Average Time | 40110.22435 | 39734.22721 |
+| Standard Deviation | 20216.44531 | 19228.05157 |
+| Lowest Time	| 32821	| 33641 |
+|Highest Time |	7055584	| 6874661 |
+|Total Time |	40110224352	| 39734227210 |
+|Total Difference |	375997142	| -375997142 |
 
 
 ### 10,000 Run Trial
