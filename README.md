@@ -106,12 +106,12 @@ Well it can mean many things. I'm going to focus on Average, Total Time, and Tim
 
 ### Average
 
-![alt text](img/Averages_FRvsBR.png?raw=true = 250x250
+![alt text](img/Averages_FRvsBR.png?raw=true =250x250
 
 As we can see, performing a backwards loop instead of a forwards loop is, on average, quicker. But only by a very little amount, this is in nanoseconds after all. 
 
 ### Total Time & Time Difference
 
-![alt text](img/TotalTime_FRvsBR.png?raw=true = 250x250
+![alt text](img/TotalTime_FRvsBR.png?raw=true =250x250
 
 Anything less than around 1,000,000 the difference in time seems negligible. But, when we get to 10,000,000 the difference is incredibly noticable. But with a difference of about 4.5 \* 10 \^9, that only translates to about 4.5 seconds. Yes, when we go through 10 million case runs of a 100,000 long array, the difference is 4.5 seconds.
