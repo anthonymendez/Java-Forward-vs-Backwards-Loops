@@ -7,45 +7,60 @@ import java.util.logging.SimpleFormatter;
 public class test {
 
 	public static void main(String[] args) throws SecurityException, IOException {
-		int length = 100000;
-		int arr[] = new int[length];
-		long currTime, diffTime;
+		//Length of the Array we're traversing through
+		int arrayLength = 100000;
+		int Array[] = new int[arrayLength];
+		long currentTime, differenceInTime;
+		//The amount of times the test will run
 		int runLimit = 10000000;
 		
+		//Setting up the PrintWriter to write to our text files
 		PrintWriter forwardWrite = new PrintWriter("ForwardRuns.txt","UTF-8"),
 					backwardWrite = new PrintWriter("BackwardRuns.txt","UTF-8");
 		
-		Logger log = Logger.getLogger("MyLog");
-		FileHandler file = new FileHandler("LoopLog.log");
-		log.addHandler(file);
-		SimpleFormatter sm = new SimpleFormatter();
-		file.setFormatter(sm);
-		log.info(String.format("Loop Test | Runs: %d | Array Length: %d", runLimit, length));
+		//Setting up a Logger just in case. Don't use this to transfer to Excel. It will be a pain.
+		Logger logger = Logger.getLogger("MyLog");
+		FileHandler fileHandler = new FileHandler("LoopLog.log");
+		logger.addHandler(fileHandler);
+		SimpleFormatter simpleFormatter = new SimpleFormatter();
+		fileHandler.setFormatter(simpleFormatter);
+		logger.info(String.format("Loop Test | Runs: %d | Array Length: %d", runLimit, arrayLength));
 		
-		for(int run = 0; run < runLimit; run++){
-			currTime = System.nanoTime();
-			for(int i = 0; i < length; i++){
-				arr[i] = i;
+		//Testing Loop
+		for(int runCount = 0; runCount < runLimit; runCount++){
+			//Take the current time.
+			currentTime = System.nanoTime();
+			//Go through array back to front
+			for(int i = 0; i < arrayLength; i++){
+				Array[i] = i;
 			}
-			diffTime = System.nanoTime()-currTime;
-			forwardWrite.println(diffTime);
+			//Find the time it took to go through the loop in nanoseconds.
+			differenceInTime = System.nanoTime()-currentTime;
+			//Write that to ForwardRuns.txt
+			forwardWrite.println(differenceInTime);
 			
-			String forward = String.format("Run: %d | Forward Loop Nano Time: %d", run+1,diffTime);
-			log.info(forward);
-//			System.out.println(forward);
+			//Formally logging this to LoopLog.log
+			String forward = String.format("Run: %d | Forward Loop Nano Time: %d", runCount+1,differenceInTime);
+			logger.info(forward);
 			
-			currTime = System.nanoTime();
-			for(int i = length-1; i >= 0; i--){
-				arr[i] = i;
+			//Take the current time.
+			currentTime = System.nanoTime();
+			//Go through array front to back.
+			for(int i = arrayLength-1; i >= 0; i--){
+				Array[i] = i;
 			}
-			diffTime = System.nanoTime()-currTime;
-			backwardWrite.println(diffTime);
+			//Find the time it took to go through the loop in nanoseconds.
+			differenceInTime = System.nanoTime()-currentTime;
+			//Write that to BackwardRuns.txt
+			backwardWrite.println(differenceInTime);
 			
-			String backward = String.format("Run: %d | Backwards Loop Nano Time: %d", run+1,diffTime);
-			log.info(backward);
-//			System.out.println(backward);
+			//Formally logging this to LoopLog.log
+			String backward = String.format("Run: %d | Backwards Loop Nano Time: %d", runCount+1,differenceInTime);
+			logger.info(backward);
 		}
-		log.info("End of Test");
+		
+		//Log End of test and close PrintWriters
+		logger.info("End of Test");
 		forwardWrite.close();
 		backwardWrite.close();
 	}
