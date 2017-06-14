@@ -31,7 +31,36 @@ My steps for each run were as follow:
 
 ## Results
 
+Standard Deviation was calculated using the Sample Standard Deviation Excel Formula.
+All of the times are in nanoseconds unless otherwise stated.
+
 ### 500 Run Trial
+
+| Data Type (ns) | Forward Runs | Backward Runs |
+|---|---|---|
+| Average Time | 53965.108 | 46863.534 |
+| Standard Deviation | 85124.13387	| 58586.45445 |
+| Lowest Time	| 37743	| 36512 |
+|Highest Time |	982153	| 861948 |
+|Total Time |	26982554	| 23431767 |
+|Total Difference |	3550787	| -3550787 |
+
+### 10,000 Run Trial
+
+| Data Type (ns) | Forward Runs | Backward Runs |
+|---|---|---|
+| Average Time | 40574.7367	| 40280.0478 |
+| Standard Deviation | 27458.3412	| 22933.27012 |
+| Lowest Time	| 34051	| 34051 |
+|Highest Time |	1318563	| 881230 |
+|Total Time |	405747367	| 402800478 |
+|Total Difference |	2946889	| -2946889 |
+
+### 100,000 Run Trial
+
+Soon to come.
+
+### 1,000,000 Run Trial
 
 | Data Type (ns) | Forward Runs | Backward Runs |
 |---|---|---|
@@ -42,22 +71,17 @@ My steps for each run were as follow:
 |Total Time |	40110224352	| 39734227210 |
 |Total Difference |	375997142	| -375997142 |
 
-
-### 10,000 Run Trial
-
-
-
-### 100,000 Run Trial
-
-
-
-### 1,000,000 Run Trial
-
-
-
 ### 1,048,576 Run Trial
 
-
+| Data Type (ns) | Forward Runs | Backward Runs |
+|---|---|---|
+| Average Time | 40143.11016	| 39828.43889 |
+| Standard Deviation | 20480.34699 | 15429.45229 |
+| Lowest Time	| 33230	| 33231 |
+|Highest Time |	7670968	| 2656408 |
+|Total Time |	42093061731	| 41763105313 |
+|Total Difference |	329956418	| -329956418 |
 
 ### 10,000,000 Run Trial (No Excel Visualization)
 
+Soon to come.
