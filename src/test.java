@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -8,8 +7,6 @@ import java.util.logging.SimpleFormatter;
 public class test {
 
 	public static void main(String[] args) throws SecurityException, IOException {
-		ArrayList<Long> forwardRuns = new ArrayList<Long>();
-		ArrayList<Long> backwardRuns = new ArrayList<Long>();
 		int length = 100000;
 		int arr[] = new int[length];
 		long currTime, diffTime;
@@ -31,7 +28,6 @@ public class test {
 				arr[i] = i;
 			}
 			diffTime = System.nanoTime()-currTime;
-			forwardRuns.add(diffTime);
 			forwardWrite.println(diffTime);
 			
 			String forward = String.format("Run: %d | Forward Loop Nano Time: %d", run+1,diffTime);
@@ -43,7 +39,6 @@ public class test {
 				arr[i] = i;
 			}
 			diffTime = System.nanoTime()-currTime;
-			backwardRuns.add(diffTime);
 			backwardWrite.println(diffTime);
 			
 			String backward = String.format("Run: %d | Backwards Loop Nano Time: %d", run+1,diffTime);
