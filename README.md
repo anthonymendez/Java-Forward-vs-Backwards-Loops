@@ -9,9 +9,13 @@ This was not a serious experiment by any means. I was bored and wanted to test o
 
 All of these runs were ran on a 2017 Dell Inspiron 15 Gaming 5000.
 > Intel i5 7300HQ
+
 > Nvidia GTX 1050 4GB
+
 > DDR4 8GB Ram
+
 > 5200RPM 1 TB Storage
+
 So your mileage may vary for your system.
 
 ## Testing Methodology
