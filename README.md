@@ -122,4 +122,4 @@ Anything less than around 1,000,000 the difference in time seems negligible. But
 
 ## Conclusion
 
-In this very unscientific and shoddy experiment, I can conclude that backwards looping is faster than forward looping. But barely.
+In this very unscientific and shoddy experiment, I can conclude that backwards looping is faster than forward looping. But just ever so slightly.
