@@ -99,3 +99,13 @@ All of the times are in nanoseconds unless otherwise stated.
 ![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/HIGH_FRvsBR.png)
 ![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/TotalTime_FRvsBR.png)
 ![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/TimeDifference_FRvsBR.png)
+
+## What does it mean?
+
+Well it can mean many things. I'm going to focus on Average, Total Time, and Time Difference.
+
+### Average
+
+![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/Averages_FRvsBR.png)
+
+As we can see, performing a backwards loop instead of a forwards loop is, on average, quicker. But only by a very little amount, this is in nanoseconds after all. 
