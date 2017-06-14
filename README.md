@@ -114,4 +114,12 @@ As we can see, performing a backwards loop instead of a forwards loop is, on ave
 
 ![drawing](img/TotalTime_FRvsBR.png?raw=true)
 
+This graph doesn't say much. The most noticable difference is when we get to the 10,000,000 case run and even then, the graph is indicating the differences are small. However...
+
+![drawing](img/TimeDifference_FRvsBR.png?raw=true)
+
 Anything less than around 1,000,000 the difference in time seems negligible. But, when we get to 10,000,000 the difference is incredibly noticable. But with a difference of about 4.5 \* 10 \^9, that only translates to about 4.5 seconds. Yes, when we go through 10 million case runs of a 100,000 long array, the difference is 4.5 seconds.
+
+## Conclusion
+
+In this very unscientific and shoddy experiment, I can conclude that backwards looping is faster than forward looping. But barely.
