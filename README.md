@@ -17,7 +17,7 @@ So your mileage may vary for your system.
 
 ## Testing Methodology
 
-I went through a total of 5 test runs. Each with a different amount of total run times. I first did 500 runs, then 10,000, then 1,000,000 runs, then 10,000,000 runs. Each times a run was completed, it would print out the results to a log file, and two different textfiles. The textfiles would be used to copy and paste all the data to an Excel Spreadsheet. 
+I went through a total of 4 test runs. Each with a different amount of total run times. I first did 500 runs, then 10,000, then 1,000,000 runs, then 10,000,000 runs. Each times a run was completed, it would print out the results to a log file, and two different textfiles. The textfiles would be used to copy and paste all the data to an Excel Spreadsheet. 
 
 The Excel Spreadsheet was set-up to calculate the Average Time, Standard Deviation, Lowest Time, Highest Time, Total Time, and Time Difference between the two runs.
 
@@ -57,10 +57,6 @@ All of the times are in nanoseconds unless otherwise stated.
 | Total Time |	405747367	| 402800478 |
 | Total Difference |	2946889	| -2946889 |
 
-### 100,000 Run Trial
-
-Soon to come.
-
 ### 1,000,000 Run Trial
 
 | Data Type (ns) | Forward Runs | Backward Runs |
@@ -84,7 +80,7 @@ Soon to come.
 | Total Difference |	329956418	| -329956418 |
 
 ### 10,000,000 Run Trial 
-#### (Java Calculated, No Excel Visualization)
+#### (Java Calculated)
 
 | Data Type (ns) | Forward Runs | Backward Runs |
 |---|---|---|
@@ -94,3 +90,7 @@ Soon to come.
 | Highest Time |	8763069	| 8763069 |
 | Total Time |	403763592174	| 399276321157 |
 | Total Difference |	4487271017	| -4487271017 |
+
+## Visualized
+
+![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/Averages_FRvsBR.png)
