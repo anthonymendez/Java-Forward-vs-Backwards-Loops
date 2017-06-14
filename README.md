@@ -93,7 +93,7 @@ All of the times are in nanoseconds unless otherwise stated.
 
 ## Visualized
 
-![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/Averages_FRvsBR.png)
+![alt text](img/Averages_FRvsBR.png?raw=true)
 ![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/STDEV_FRvsBR.png)
 ![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/MIN_FRvsBR.png)
 ![alt text](https://raw.githubusercontent.com/tonydetiger/Java-Forward-vs-Backwards-Loops/tonydetiger-readme/img/HIGH_FRvsBR.png)
