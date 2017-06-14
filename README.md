@@ -3,11 +3,11 @@ This was a quick test to see whether or not a forward or backwards loop is faste
 
 ## Disclaimer
 
-This was not a serious experiment by any means. I was bored and wanted to test out the differents between forward and backward loops in Java.
+This was not a serious experiment by any means. I was bored and wanted to test out the difference between forward and backward loops in Java.
 
 ## My System
 
-All of these runs were ran on a 2017 Dell Inspiron 15 Gaming 5000.
+All of these tests runs were ran on a 2017 Dell Inspiron 15 Gaming 5000.
 - Intel i5 7300HQ
 - Nvidia GTX 1050 4GB
 - DDR4 8GB Ram
