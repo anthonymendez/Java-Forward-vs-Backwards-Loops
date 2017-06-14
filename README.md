@@ -7,12 +7,22 @@ This was not a serious experiment by any means. I was bored and wanted to test o
 
 ## Testing Methodology
 
-I went through a total of 4 test runs. Each with a different amount of total run times. I first did 500 runs, then 10,000, then 1,000,000 runs, then 10,000,000 runs. Each times a run was completed, it would print out the results to a log file, and two different textfiles. The textfiles would be used to copy and paste all the data to an Excel Spreadsheet. 
+I went through a total of 5 test runs. Each with a different amount of total run times. I first did 500 runs, then 10,000, then 1,000,000 runs, then 10,000,000 runs. Each times a run was completed, it would print out the results to a log file, and two different textfiles. The textfiles would be used to copy and paste all the data to an Excel Spreadsheet. 
 
-However there were issues importing the 10,000,000 run data to Excel. That a little bit later.
+However there were issues importing the 10,000,000 run data to Excel. When I copy and pasted the data from text files, Excel can only have a total of 1,048,576 entries. So to 
 
 I set up the Excel Spreadsheet to calculate the Average Time, Standard Deviation, Lowest Time, Highest Time, Total Time, and Time Difference between the two runs.
 
 ## Results
 
 ### 500 Run Trial
+
+### 10,000 Run Trial
+
+### 100,000 Run Trial
+
+### 1,000,000 Run Trial
+
+### 1,048,576 Run Trial
+
+### 10,000,000 Run Trial # (Java Calculated Data
