@@ -3,7 +3,7 @@ This was a quick test to see whether or not a forward or backwards loop is faste
 
 ## Disclaimer
 
-This was not a serious experiment by any means. I was bored and wanted to test out the difference between forward and backward loops in Java.
+<b>This was not a serious experiment by any means.</b> I was bored and wanted to test out the difference between forward and backward loops in Java.
 
 ## My System
 
